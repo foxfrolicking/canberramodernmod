@@ -1,195 +1,404 @@
-/******************************************************************************
-START Glitch hello-app default styles
-
-The styles in this section do some minimal CSS resets, set default fonts and 
-colors, and handle the layout for our footer and "Remix on Glitch" button. If
-you're new to CSS they may seem a little complicated, but you can scroll down
-to this section's matching END comment to see page-specific styles.
-******************************************************************************/
-
-
-/* 
-  The style rules specify elements by type and by attributes such as class and ID
-  Each section indicates an element or elements, then lists the style properties to apply
-  See if you can cross-reference the rules in this file with the elements in index.html
-*/
-
-/* Our default values set as CSS variables */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 :root {
-  --color-bg: #69F7BE;
-  --color-text-main: #000000;
-  --color-primary: #FFFF00;
-  --wrapper-height: 87vh;
-  --image-max-width: 300px;
-  --image-margin: 3rem;
-  --font-family: "HK Grotesk";
-  --font-family-header: "HK Grotesk";
+    --primary: #111;
+    --secondary: #A6D1E6;
+    --bg: #F0F8FF;
+    --border: #aaa;
+}
+* 
+{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth ;
+}
+.top
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    width: 100%;
+    padding: 0 50px;
+    font-size: 1.5em;
+}
+.top .links a
+{
+    text-decoration: none;
+    color: var(--primary);
+    transition: .5s;
+}
+.top .links a:hover
+{
+    color: var(--secondary);
+}
+.top .head
+{
+    font-weight: 600;
+}
+.top .head span
+{
+    color: var(--secondary);
+}
+.top .search i
+{
+    transition: .5s;
+    padding-right: 10px;
+}
+.top .search i:hover
+{
+    color: var(--secondary);
+    cursor: pointer;
+}
+.top .search .hamburger
+{
+    display: none;
+}
+.header
+{
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: #fff;
+}
+.header .navigation
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    position: relative;
+}
+.header .navigation li a
+{
+    text-decoration: none;
+    color: var(--primary);
+    padding: 5px 40px;
+    transition: .3s ease-in-out;
+    border-bottom: 2px solid #fff;
+    left: 0;
+}
+.header .navigation li a:hover
+{
+    border-bottom: 2px solid var(--secondary);
+}
+.banner
+{
+    margin: 20px 0px;   
+}
+.banner swiper-container 
+{
+    width: 100%;
+    height: 80vh;
+  }
+
+swiper-slide 
+  {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+swiper-slide .imgbx img 
+  {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(50%)
+  }
+swiper-slide .text
+  {
+    position: absolute;
+    color: #fff;
+    top: 70%;
+  }
+section
+  {
+    padding: 40px 30px;
+  }
+.news
+{
+    text-align: center;
+}
+.news .titletext
+{
+    text-align: center;
+    font-size: 2em;
+    padding-bottom: 40px;
+}
+.news .titletext span
+{
+    color: var(--secondary);
 }
 
-/* Basic page style resets */
-* {
-  box-sizing: border-box;
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-block: 2rem;
+    gap: 2rem;
+    background: var(--bg);
+    border-radius: 20px;
+    padding: 50px 0px;
+  }
+  
+  img {
+    max-width: 100%;
+    object-fit: cover;
+  }
+  
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: clamp(20rem, calc(20rem + 2vw), 22rem);
+    overflow: hidden;
+    box-shadow: 0 .1rem 1rem rgba(0, 0, 0, 0.1);
+    border-radius: 1em;
+    background: #fff;
+  }
+  
+  .card__body {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+  }
+  
+  
+  .tag {
+    align-self: flex-start;
+    padding: .25em .75em;
+    border-radius: 1em;
+    font-size: .75rem;
+    background: var(--secondary);
+    color: #fff;
+  }
+  
+  .tag + .tag {
+    margin-left: .5em;
+  }
+  
+  .card__body h4 {
+    font-size: 1.5rem;
+    text-transform: capitalize;
+  }
+  
+  .card__footer {
+    display: flex;
+    padding: 1rem;
+    margin-top: auto;
+  }
+  
+  .user {
+    display: flex;
+    gap: .5rem;
+  }
+  
+  .user__image {
+    border-radius: 50%;
+  }
+  
+  .user__info > small {
+    color: #666;
+  }
+
+.events
+{
+    text-align: center;
 }
-[hidden] {
-  display: none !important;
+.events .titletext
+{
+    text-align: center;
+    font-size: 2em;
+    padding-bottom: 40px;
+}
+.events .titletext span
+{
+    color: var(--secondary);
+}
+.jobs
+{
+    text-align: center;
+}
+.jobs .titletext
+{
+    text-align: center;
+    font-size: 2em;
+    padding-bottom: 40px;
+}
+.jobs .titletext span
+{
+    color: var(--secondary);
+}   
+.register
+{
+    text-align: center;
+    border-top: 1px solid var(--border);
+}
+.register .titletext
+{
+    text-align: center;
+    font-size: 2em;
+    padding-bottom: 40px;
+}
+.register .titletext span
+{
+    color: var(--secondary);
+}  
+.form
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    background: var(--secondary);
+    padding: 30px;
+    width: 700px;
+    margin: auto;
+    border-radius: 20px;
+    height: auto;
+}
+.form .formimg img
+{
+    width: 350px;
+    border-radius: 25px;
+}
+.form .formcontent
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+.form .formcontent input
+{
+    border: none;
+    padding: 10px 30px;
+    border-radius: 20px;
+}
+.strip
+{
+    background: var(--secondary);
+    width: 100%;
+    height: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.strip h1
+{
+    color: #fff;
+    font-weight: 300;
+}
+.strip .icons a{
+    color: #fff;
+}
+.alert {
+    position: fixed;
+    top: 5%;
+    right: 2%;
+    background: var(--secondary);
+    color: #fff;
+    font-weight: 800;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    padding: 20px;
+    width: 300px;
+    height: 100vh;
+    border-radius: 10px;
+    transform: translateX(150%);
+    transition: transform 0.3s ease-in-out;
+    z-index: 2;
+}
+.alert .navigation1
+{
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+    list-style: none;
+    text-align: center;
+}
+.alert .navigation1 li a
+{
+    text-decoration: none;
+    color: #fff;
+}
+.alert p {
+    margin: 30px;
+    letter-spacing: 1px;
 }
 
-/* Import fonts */
-@font-face {
-  font-family: HK Grotesk;
-  src: url("https://cdn.glitch.me/605e2a51-d45f-4d87-a285-9410ad350515%2FHKGrotesk-Regular.otf?v=1603136326027")
-    format("opentype");
+.alert i {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 30px;
+    cursor: pointer;
+    color: #fff;
 }
-@font-face {
-  font-family: HK Grotesk;
-  font-weight: bold;
-  src: url("https://cdn.glitch.me/605e2a51-d45f-4d87-a285-9410ad350515%2FHKGrotesk-Bold.otf?v=1603136323437")
-    format("opentype");
-}
-
-/* Our remix on glitch button */
-.btn--remix {
-  font-family: HK Grotesk;
-  padding: 0.75rem 1rem;
-  font-size: 1.1rem;
-  line-height: 1rem;
-  font-weight: 500;
-  height: 2.75rem;
-  align-items: center;
-  cursor: pointer;
-  background: #FFFFFF;
-  border: 1px solid #000000;
-  box-sizing: border-box;
-  border-radius: 4px;
-  text-decoration: none;
-  color: #000;
-  white-space: nowrap;
-  margin-left: auto;
-}
-.btn--remix img {
-  margin-right: 0.5rem;
-}
-.btn--remix:hover {
-  background-color: #D0FFF1;
+.register .form .btn
+{
+    margin-top: 10px;
+    border: none;
+    padding: 10px 30px;
+    background: #fff;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: .5s;
 }
 
-/* Navigation grid */
-.footer {
-  display: flex;
-  justify-content: space-between;
-  margin: 1rem auto 0;
-  padding: 1rem 0 0.75rem 0;
-  width: 100%;
-  flex-wrap: wrap;
-  border-top: 4px solid #fff;
-}
-
-.footer a:not(.btn--remix):link,
-a:not(.btn--remix):visited {
-  font-family: HK Grotesk;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 1.1rem;
-  color: #000;
-  text-decoration: none;
-  border-style: none;
-}
-.footer a:hover {
-  background: var(--color-primary);
-}
-
-.footer .links {
-  padding: 0.5rem 1rem 1.5rem;
-  white-space: nowrap;
-}
-
-.divider {
-  padding: 0 1rem;
-}
-/******************************************************************************
-END Glitch hello-app default styles
-******************************************************************************/
-
-body {
-  font-family: HK Grotesk;
-  background-color: var(--color-bg);
-}
-
-/* Page structure */
-.wrapper {
-  min-height: var(--wrapper-height);
-  display: grid;
-  place-items: center;
-  margin: 0 1rem;
-}
-.content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-/* Very light scaling for our illustration */
-.title {
-  color: #2800FF;
-  font-family: HK Grotesk;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 100px;
-  line-height: 105%;
-  margin: 0;
-}
-
-/* Very light scaling for our illustration */
-.illustration {
-  max-width: 100%;
-  max-height: var(--image-max-width);
-  margin-top: var(--image-margin);
-}
-
-/* Instructions */
-.instructions {
-  margin: 1rem auto 0;
-}
-
-/* Button - Add it from the README instructions */
-button,
-input {
-  font-family: inherit;
-  font-size: 100%;
-  background: #FFFFFF;
-  border: 1px solid #000000;
-  box-sizing: border-box;
-  border-radius: 4px;
-  padding: 0.5rem 1rem;
-  transition: 500ms;
-}
-
-/* Subheading */
-h2 {
-  color: #2800FF;
-}
-
-/* Interactive image */
-.illustration:active {
-  transform: translateY(5px);
-}
-
-/* Button dip
-- Toggling this class on and off will move it down and up again
-- The button transition property above determines the speed of the translate (500ms)
-*/
-.dipped {
-  transform: translateY(5px);
-}
-
-/* Links that open files in the editor */
-.fileopener {
-  cursor:pointer;
-  font-weight:bold;
-  border-bottom:3px solid var(--color-primary);
-  color: var(--color-secondary);
-}
-.fileopener:hover {
-  border-bottom:3px solid var(--color-secondary);
+@media(max-width: 911px){
+    .header
+    {
+        display: none;
+    }
+    .top .search .hamburger
+    {
+        display: block;
+    }   
+    .register .form
+    {
+        margin: 0 0;
+    }
+    swiper-slide .imgbx img {
+        height: 100vh;
+    }
+    .top .search{
+        display: flex;
+        justify-content: space-between;
+    }
+    .top
+    {
+        position: sticky;
+        top: 0;
+        z-index: 2;
+        background: #fff;
+        width: 100%;
+    }
+    .banner
+    {
+    margin: 0px 0px;   
+    }
+    .form
+    {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
