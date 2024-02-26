@@ -109,7 +109,7 @@ section p {
 	max-width: 775px;
 	line-height: 2;
 	padding: 0 20px;
-	margin-bottom: 30px;
+	margin-bottom: 0px;
 	text-align: center;
 }
 
@@ -619,11 +619,12 @@ div.desc {
   .card__body h4 {
     font-size: 1.5rem;
     text-transform: capitalize;
+    text-align: center;
   }
   
   .card__footer {
     display: flex;
-    padding: 1rem;
+    padding-bottom: 1rem;
     margin-top: auto;
   }
   
