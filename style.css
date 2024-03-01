@@ -1,20 +1,22 @@
 
 :root {
     --primary: #111;
-    --secondary: #A6D1E6;
-    --bg: #F0F8FF;
-    --border: #aaa;
+    --secondary: #eaeaea;
+    --bg: #ffffff;
+    --border: #ffffff;
     --color-bg: #ffffff;
   --color-text-main: #000000;
   --color-primary: #FFFF00;
   --wrapper-height: 87vh;
   --image-max-width: 300px;
   --image-margin: 3rem;
-  --font-family: "HK Grotesk";
-  --font-family-header: "HK Grotesk";
+  --font-family: "Raleway";
 }
 
-
+h1 {
+  font-family: "Raleway", sans-serif;
+  margin-bottom: 10px;
+}
 * {
 	margin: 0;
 	padding: 0;
@@ -50,7 +52,7 @@ section {
 }
 
 section:not(.hero):nth-child(even) {
-	background-color: #f5f5f5;
+	background-color: #eaeaea;
 }
 
 .grid {
@@ -433,15 +435,6 @@ div.desc {
 
 
 
-
-
-{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    font-family: 'Poppins', sans-serif;
-    scroll-behavior: smooth ;
-}
 
 .container {
     display: flex;
