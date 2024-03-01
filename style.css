@@ -292,7 +292,7 @@ div.desc {
 }
 
 .packages .grid li i {
-	color: #e07e7b;
+	color: #eaeaea;
 }
 
 .packages .grid li h4 {
@@ -357,7 +357,7 @@ div.desc {
     overflow: hidden;
     box-shadow: 0 .1rem 1rem rgba(0, 0, 0, 0.1);
     border-radius: 1em;
-    background: #fff;
+    background: #ffffff;
   }
   
   .card__body {
@@ -405,3 +405,14 @@ div.desc {
   .user__info > small {
     color: #666;
   }
+
+@media screen and (prefers-color-scheme: light) {
+  body {
+    background-color: white;
+    color: black;
+  }
+  
+section:not(.hero):nth-child(even) {
+	background-color: #000000;
+}
+}
