@@ -13,10 +13,7 @@
   --font-family: "Raleway";
 }
 
-// <uniquifier>: Use a unique and descriptive class name
-// <weight>: Use a value from 100 to 900
-
-.raleway-<uniquifier> {
+.raleway {
   font-family: "Raleway", sans-serif;
   font-optical-sizing: auto;
   font-weight: <weight>;
@@ -228,6 +225,7 @@ h1 {
     
   .hero h2 {
 		font-size: bold 24px;
+    padding-top: 90px;
     }
 
 	}
