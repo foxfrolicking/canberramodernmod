@@ -9,7 +9,7 @@
   of sophistication that I was after.
   
   <img src="https://cdn.glitch.global/768ee2e3-989d-486c-babe-17a083641e78/desktop.png?v=1709295869474"
-     alt="Markdown Monster icon"
+     alt="ArkShelterHome"
      style="float: center; margin-right: 10px;" />
   
 Although trying to incorporate videography was more difficult as I couldn't find a 
@@ -22,7 +22,7 @@ video I felt was of good enough aesthetics and quality, I redirected my focus to
   visibility of the navigation bar on mobile and tablet devices, avoiding the common collapsible hamburger menu for enhanced usability.
   
   <img src="https://cdn.glitch.global/768ee2e3-989d-486c-babe-17a083641e78/phoneview.png?v=1709295935640"
-     alt="Markdown Monster icon"
+     alt="ArkHamburger"
      style="float: center; margin-right: 10px;" />
   
 In keeping with a design ethos that prioritizes clarity and coherence, I adhered to a lower exposure aesthetic for the hero image, 
@@ -31,13 +31,20 @@ In keeping with a design ethos that prioritizes clarity and coherence, I adhered
   appealing for this aspect of the design, I devoted considerable attention to crafting aesthetically pleasing and professional-looking 
   layouts that showcase content with finesse. After finding something I felt was going to be easy to build on to create the desired effect. 
   
+  <img src="https://cdn.glitch.global/768ee2e3-989d-486c-babe-17a083641e78/Screenshot%202024-03-01%20224348.png?v=1709296017028"
+     alt="BadBlog"
+     style="float: center; margin-right: 10px;" />
   
+  <img src="https://cdn.glitch.global/768ee2e3-989d-486c-babe-17a083641e78/betterarticle.png?v=1709295985811"
+     alt="GoodArcticlestyle"
+     style="float: center; margin-right: 10px;" />
   
 Furthermore, the inclusion of an Instagram widget was deemed essential, given its relevance to the Canberra Modern page. While I aspired to 
   infuse it with a stylized aesthetic akin to the blog and events sections, the practicality of such design considerations in this instance 
   had to come before the desired aesthetics. Nonetheless, this rudimentary widget implementation I’ve slapped together serves as a foundation 
   upon which future enhancements can be built, and crucially, it facilitates the development of responsive breakpoints which was my main issue 
   when trying to facilitate visuals.
+  
 In making the key sections for the Canberra Modern page, I prioritized functionality and coherence. Although I envisage augmenting these
   sections with additional interactive elements, such as a button that would link to each respective other page within the site and enhanced 
   social media integration, my focus for this phase of the design process centered on establishing fundamental structures and ensuring robust 
