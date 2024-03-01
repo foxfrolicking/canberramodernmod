@@ -13,6 +13,15 @@
   --font-family: "Raleway";
 }
 
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 900
+
+.raleway-<uniquifier> {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
 * {
 	margin: 0;
 	padding: 0;
@@ -118,6 +127,7 @@ header {
 
 header h2 {
 	font-family: "Raleway", sans-serif;
+  margin-bottom: 15px;
 }
 
 header nav {
@@ -133,10 +143,6 @@ header nav li {
 	header {
 		padding: 20px 50px;
 		flex-direction: column;
-	}
-
-	header h2 {
-		margin-bottom: 15px;
 	}
 }
 
@@ -183,7 +189,7 @@ h1 {
 }
 
 .hero h3 {
-	font: 28px "Raleway", sans-serif;
+	font: bold 28px "Raleway", sans-serif;
 	font-weight: 300;
 	text-shadow: 2px 2px rgba(0, 0, 0, 0.3);
 	margin-bottom: 40px;
@@ -212,7 +218,7 @@ h1 {
 	}
 
 	.hero h3 {
-		font-size: 24px;
+		font-size: bold 24px;
 	}
 }
 
@@ -260,18 +266,6 @@ h1 {
 .packages .grid li h4 {
 	font-size: 30px;
 	margin: 25px 0;
-}
-
-@font-face {
-  font-family: HK Grotesk;
-  src: url("https://cdn.glitch.me/605e2a51-d45f-4d87-a285-9410ad350515%2FHKGrotesk-Regular.otf?v=1603136326027")
-    format("opentype");
-}
-@font-face {
-  font-family: HK Grotesk;
-  font-weight: bold;
-  src: url("https://cdn.glitch.me/605e2a51-d45f-4d87-a285-9410ad350515%2FHKGrotesk-Bold.otf?v=1603136323437")
-    format("opentype");
 }
 
 .wrapper {
