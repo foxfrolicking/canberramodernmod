@@ -65,15 +65,15 @@ section:not(.hero):nth-child(even) {
 }
 
 .image-1 {
-	background-image: url("https://cdn.glitch.global/00b39c09-bfe4-4f03-bf44-848b52b18068/cpoolc.jpg?v=1708652716659");
+	background-image: url("https://cdn.glitch.global/768ee2e3-989d-486c-babe-17a083641e78/cpoolc.jpg?v=1709289847416");
 }
 
 .image-2 {
-	background-image: url("https://cdn.glitch.global/768ee2e3-989d-486c-babe-17a083641e78/hgjhygyu.jpg?v=1708992983195");
+	background-image: url("https://cdn.glitch.global/768ee2e3-989d-486c-babe-17a083641e78/hgjhygyu.jpg?v=1708993364465");
 }
 
 .image-3 {
-	background-image: url("https://cdn.glitch.global/768ee2e3-989d-486c-babe-17a083641e78/hgvhvj.jpg?v=1708993128356");
+	background-image: url("https://cdn.glitch.global/768ee2e3-989d-486c-babe-17a083641e78/hgvhvj.jpg?v=1708993303299");
 }
 
 .image-4 {
@@ -170,7 +170,7 @@ h1 {
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background-image: url("https://cdn.glitch.global/768ee2e3-989d-486c-babe-17a083641e78/bleh.webp?v=1708947767337");
+	background-image: url("https://cdn.glitch.global/768ee2e3-989d-486c-babe-17a083641e78/bleh.jpg?v=1709289798922");
 	background-size: cover;
 	z-index: -1;
 	background-color: #80a3db;
