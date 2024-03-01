@@ -42,20 +42,6 @@ a:hover {
 	opacity: 1;
 }
 
-a.btn {
-	border-radius: 4px;
-	text-transform: uppercase;
-	font-weight: bold;
-	text-align: center;
-	background-color: #e07e7b;
-	opacity: 1;
-	transition: all 400ms;
-}
-
-a.btn:hover {
-	background-color: #ce5856;
-}
-
 section {
 	display: flex;
 	flex-direction: column;
@@ -196,10 +182,6 @@ h6 {
 	font-weight: 300;
 	text-shadow: 2px 2px rgba(0, 0, 0, 0.3);
 	margin-bottom: 40px;
-}
-
-.hero a.btn {
-	padding: 20px 46px;
 }
 
 .hero-content-area {
@@ -343,44 +325,6 @@ footer {
 	padding: 20px 0;
 }
 
-footer ul {
-	display: flex;
-}
-
-footer ul li {
-	margin-left: 16px;
-}
-
-footer p {
-	text-transform: uppercase;
-	font-size: 14px;
-	opacity: 0.6;
-	align-self: center;
-}
-
-@media (max-width: 1100px) {
-	footer {
-		flex-direction: column;
-	}
-
-	footer p {
-		text-align: center;
-		margin-bottom: 20px;
-	}
-
-	footer ul li {
-		margin: 0 8px;
-	}
-}
-
-
-* {
-  box-sizing: border-box;
-}
-[hidden] {
-  display: none !important;
-}
-
 @font-face {
   font-family: HK Grotesk;
   src: url("https://cdn.glitch.me/605e2a51-d45f-4d87-a285-9410ad350515%2FHKGrotesk-Regular.otf?v=1603136326027")
@@ -391,66 +335,6 @@ footer p {
   font-weight: bold;
   src: url("https://cdn.glitch.me/605e2a51-d45f-4d87-a285-9410ad350515%2FHKGrotesk-Bold.otf?v=1603136323437")
     format("opentype");
-}
-
-
-.btn--remix {
-  font-family: HK Grotesk;
-  padding: 0.75rem 1rem;
-  font-size: 1.1rem;
-  line-height: 1rem;
-  font-weight: 500;
-  height: 2.75rem;
-  align-items: center;
-  cursor: pointer;
-  background: #FFFFFF;
-  border: 1px solid #000000;
-  box-sizing: border-box;
-  border-radius: 4px;
-  text-decoration: none;
-  color: #000;
-  white-space: nowrap;
-  margin-left: auto;
-}
-.btn--remix img {
-  margin-right: 0.5rem;
-}
-.btn--remix:hover {
-  background-color: #D0FFF1;
-}
-
-
-.footer {
-  display: flex;
-  justify-content: space-between;
-  margin: 1rem auto 0;
-  padding: 1rem 0 0.75rem 0;
-  width: 100%;
-  flex-wrap: wrap;
-  border-top: 4px solid #fff;
-}
-
-.footer a:not(.btn--remix):link,
-a:not(.btn--remix):visited {
-  font-family: HK Grotesk;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 1.1rem;
-  color: #000;
-  text-decoration: none;
-  border-style: none;
-}
-.footer a:hover {
-  background: var(--color-primary);
-}
-
-.footer .links {
-  padding: 0.5rem 1rem 1.5rem;
-  white-space: nowrap;
-}
-
-.divider {
-  padding: 0 1rem;
 }
 
 body {
@@ -494,17 +378,6 @@ body {
   margin: 1rem auto 0;
 }
 
-button,
-input {
-  font-family: inherit;
-  font-size: 100%;
-  background: #FFFFFF;
-  border: 1px solid #000000;
-  box-sizing: border-box;
-  border-radius: 4px;
-  padding: 0.5rem 1rem;
-  transition: 500ms;
-}
 
 h2 {
   color: #2800FF;
